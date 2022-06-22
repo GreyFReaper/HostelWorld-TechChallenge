@@ -33,6 +33,7 @@ Scenario 4 : User fails to Log in.
 
 Scenario 5 : User Successfully Logs in to the Account.
     HT-008 : User is able to navigate to the Account details screen with correct email and password.
+    HT-009 : User is able to logout.
 
 # Test Execution
 Upon Successful installation of the robot framework and Tests can be run using the following steps.
@@ -40,5 +41,9 @@ Upon Successful installation of the robot framework and Tests can be run using t
     2. Navigate to the tests folder.
     3. Run the following command "robot ."
 
-# Reporting
+# Text Execution Reporting
 The Report for the test execution can be seen within the folder named output.html
+The evidence for each test is attached in the Report on the step for each test.
+
+# Bug Reporting
+The Bug report can be found in the file named as "Bug_Report.txt"

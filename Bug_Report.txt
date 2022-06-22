@@ -1,0 +1,35 @@
+Please find the bugs found below.
+Bug Ordering (HostelWorld TechChallenge-001) -> HTB-001
+
+
+HTB-001 : User is able to create an account wtih an incorrect email id.
+    
+    Steps to Reproduce ::
+        1. Open the Application
+        2. Tap on the "CREATE ACCOUNT" button.
+        3. Enter an incorrect email id "abc.com"
+        4. User is able to create account. 
+    
+    Expected Result : User should be presented with an error.
+    Actual Result : User is not presented with an error.
+
+HTB-002 : Login Credentials are lost when application is closed.
+    
+    Steps to Reproduce ::
+        1. Open the Application
+        2. Tap on the "CREATE ACCOUNT" button.
+        3. Enter all the information correctly as mentioned below
+                First Name :: abc
+                Last Name :: xyz
+                Email :: abc@xyz.com
+                Password :: qwerty
+        4. Tap on the "CREATE ACCOUNT" button.
+        5. Close the application.
+        6. Open the Application.
+        7. Tap on "Login" button.
+        8. Enter the email "abc@xyz.com" and password "qwerty".
+        9. Tap on "Login" button.
+        10. User is presented with an error.
+
+    Expected Result : User should be able to login to the account information screen (User Logged in).
+    Actual Result : User is presented with an error.
