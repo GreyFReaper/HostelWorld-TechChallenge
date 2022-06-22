@@ -13,6 +13,8 @@ Scenario 5 : User Successfully Logs in to the Account.
 
 # Test Case ordering - HosterlWorld TechChallenge-001 (HT-001....)
 
+# Common Code "config.robot" is used as a resource file for the test cases for the common functionality
+
 # Test Cases
 Scenario 1 : User Successfully lands on Home Screen.
     HT-001 : User is able to see the create account button

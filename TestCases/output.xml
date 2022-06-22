@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on darwin)" generated="20220622 15:32:53.419" rpa="false" schemaversion="3">
+<suite id="s1" name="TestCases" source="/Users/anamkhan/Documents/Mohit/HostelWorld_TechChallenge/HostelWorld-TechChallenge/TestCases">
+<suite id="s1-s1" name="Test Scenario 1" source="/Users/anamkhan/Documents/Mohit/HostelWorld_TechChallenge/HostelWorld-TechChallenge/TestCases/test_scenario_1.robot">
+<test id="s1-s1-t1" name="HT-001 : User is able to see the create account button." line="8">
+<kw name="Open App" library="config">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${BUNDLE_ID}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<arg>automationName=appium</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20220622 15:32:53.952" endtime="20220622 15:33:13.138"/>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220622 15:33:14.245" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220622 15:33:13.138" endtime="20220622 15:33:14.246"/>
+</kw>
+<status status="PASS" starttime="20220622 15:32:53.952" endtime="20220622 15:33:14.246"/>
+</kw>
+<kw name="Verify Create Account Button">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${HOMESCREEN_CREATE_ACCOUNT}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220622 15:33:14.251" endtime="20220622 15:33:16.505"/>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220622 15:33:17.441" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-2.png"&gt;&lt;img src="appium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220622 15:33:16.505" endtime="20220622 15:33:17.442"/>
+</kw>
+<status status="PASS" starttime="20220622 15:33:14.246" endtime="20220622 15:33:17.442"/>
+</kw>
+<kw name="Close All Apps" library="config">
+<kw name="Close All Applications" library="AppiumLibrary">
+<doc>Closes all open applications.</doc>
+<status status="PASS" starttime="20220622 15:33:17.443" endtime="20220622 15:33:19.283"/>
+</kw>
+<status status="PASS" starttime="20220622 15:33:17.443" endtime="20220622 15:33:19.283"/>
+</kw>
+<status status="PASS" starttime="20220622 15:32:53.951" endtime="20220622 15:33:19.284"/>
+</test>
+<test id="s1-s1-t2" name="HT-002 : User is able to see the login button." line="13">
+<kw name="Open App" library="config">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${BUNDLE_ID}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<arg>automationName=appium</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20220622 15:33:19.286" endtime="20220622 15:33:37.295"/>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220622 15:33:38.354" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-3.png"&gt;&lt;img src="appium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220622 15:33:37.295" endtime="20220622 15:33:38.354"/>
+</kw>
+<status status="PASS" starttime="20220622 15:33:19.286" endtime="20220622 15:33:38.354"/>
+</kw>
+<kw name="Verify Login Button">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${HOMESCREEN_LOGIN}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220622 15:33:38.355" endtime="20220622 15:33:40.467"/>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220622 15:33:41.405" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-4.png"&gt;&lt;img src="appium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220622 15:33:40.467" endtime="20220622 15:33:41.405"/>
+</kw>
+<status status="PASS" starttime="20220622 15:33:38.354" endtime="20220622 15:33:41.405"/>
+</kw>
+<kw name="Close All Apps" library="config">
+<kw name="Close All Applications" library="AppiumLibrary">
+<doc>Closes all open applications.</doc>
+<status status="PASS" starttime="20220622 15:33:41.406" endtime="20220622 15:33:43.495"/>
+</kw>
+<status status="PASS" starttime="20220622 15:33:41.406" endtime="20220622 15:33:43.495"/>
+</kw>
+<status status="PASS" starttime="20220622 15:33:19.284" endtime="20220622 15:33:43.495"/>
+</test>
+<status status="PASS" starttime="20220622 15:32:53.464" endtime="20220622 15:33:43.497"/>
+</suite>
+<suite id="s1-s2" name="Test Scenario 2" source="/Users/anamkhan/Documents/Mohit/HostelWorld_TechChallenge/HostelWorld-TechChallenge/TestCases/test_scenario_2.robot">
+<test id="s1-s2-t1" name="HT-005 : User enters the details correctly and is able to create account." line="7">
+<kw name="Open App" library="config">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${BUNDLE_ID}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<arg>automationName=appium</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20220622 15:33:43.515" endtime="20220622 15:34:01.860"/>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220622 15:34:02.816" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-5.png"&gt;&lt;img src="appium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220622 15:34:01.860" endtime="20220622 15:34:02.817"/>
+</kw>
+<status status="PASS" starttime="20220622 15:33:43.514" endtime="20220622 15:34:02.818"/>
+</kw>
+<kw name="Create Account Successfully">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${HOMESCREEN_CREATE_ACCOUNT}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220622 15:34:02.819" endtime="20220622 15:34:04.805"/>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<arg>${HOMESCREEN_CREATE_ACCOUNT}</arg>
+<doc>Tap element identified by ``locator``. </doc>
+<status status="PASS" starttime="20220622 15:34:04.805" endtime="20220622 15:34:05.505"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${REGISTER_FIRST_NAME}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220622 15:34:05.505" endtime="20220622 15:34:08.464"/>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220622 15:34:09.509" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-6.png"&gt;&lt;img src="appium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220622 15:34:08.465" endtime="20220622 15:34:09.514"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${REGISTER_FIRST_NAME}</arg>
+<arg>${FIRST_NAME}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220622 15:34:09.521" level="INFO">Typing text 'Mohit' into text field 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.EditText[1]'</msg>
+<status status="PASS" starttime="20220622 15:34:09.515" endtime="20220622 15:34:10.303"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${REGISTER_LAST_NAME}</arg>
+<arg>${LAST_NAME}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220622 15:34:10.308" level="INFO">Typing text 'Rochwani' into text field 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.EditText[2]'</msg>
+<status status="PASS" starttime="20220622 15:34:10.303" endtime="20220622 15:34:11.251"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${REGISTER_EMAIL}</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220622 15:34:11.257" level="INFO">Typing text 'mohit.r787@gmail.com' into text field 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.EditText[3]'</msg>
+<status status="PASS" starttime="20220622 15:34:11.251" endtime="20220622 15:34:12.448"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${REGISTER_PASSWORD}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220622 15:34:12.451" level="INFO">Typing text 'mohit.r787' into text field 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.EditText[4]'</msg>
+<status status="PASS" starttime="20220622 15:34:12.448" endtime="20220622 15:34:13.509"/>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220622 15:34:14.632" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-7.png"&gt;&lt;img src="appium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220622 15:34:13.509" endtime="20220622 15:34:14.632"/>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<arg>${REGISTER_CREATE_ACCOUNT_BUTTON}</arg>
+<doc>Tap element identified by ``locator``. </doc>
+<status status="PASS" starttime="20220622 15:34:14.632" endtime="20220622 15:34:15.430"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220622 15:34:18.432" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220622 15:34:15.430" endtime="20220622 15:34:18.433"/>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220622 15:34:19.421" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-8.png"&gt;&lt;img src="appium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220622 15:34:18.433" endtime="20220622 15:34:19.421"/>
+</kw>
+<status status="PASS" starttime="20220622 15:34:02.818" endtime="20220622 15:34:19.421"/>
+</kw>
+<kw name="Close All Apps" library="config">
+<kw name="Close All Applications" library="AppiumLibrary">
+<doc>Closes all open applications.</doc>
+<status status="PASS" starttime="20220622 15:34:19.422" endtime="20220622 15:34:21.714"/>
+</kw>
+<status status="PASS" starttime="20220622 15:34:19.422" endtime="20220622 15:34:21.715"/>
+</kw>
+<status status="PASS" starttime="20220622 15:33:43.512" endtime="20220622 15:34:21.715"/>
+</test>
+<status status="PASS" starttime="20220622 15:33:43.499" endtime="20220622 15:34:21.716"/>
+</suite>
+<suite id="s1-s3" name="Test Scenario 3" source="/Users/anamkhan/Documents/Mohit/HostelWorld_TechChallenge/HostelWorld-TechChallenge/TestCases/test_scenario_3.robot">
+<test id="s1-s3-t1" name="HT-003 : User leaves all the text box blank." line="7">
+<kw name="Open App" library="config">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${BUNDLE_ID}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<arg>automationName=appium</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20220622 15:34:21.727" endtime="20220622 15:34:39.902"/>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220622 15:34:41.513" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-9.png"&gt;&lt;img src="appium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220622 15:34:39.902" endtime="20220622 15:34:41.513"/>
+</kw>
+<status status="PASS" starttime="20220622 15:34:21.726" endtime="20220622 15:34:41.514"/>
+</kw>
+<kw name="Create Account empty text fields">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${HOMESCREEN_CREATE_ACCOUNT}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220622 15:34:41.515" endtime="20220622 15:34:43.508"/>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<arg>${HOMESCREEN_CREATE_ACCOUNT}</arg>
+<doc>Tap element identified by ``locator``. </doc>
+<status status="PASS" starttime="20220622 15:34:43.509" endtime="20220622 15:34:44.171"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${REGISTER_FIRST_NAME}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220622 15:34:44.171" endtime="20220622 15:34:47.127"/>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220622 15:34:48.243" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-10.png"&gt;&lt;img src="appium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220622 15:34:47.127" endtime="20220622 15:34:48.244"/>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<arg>${REGISTER_CREATE_ACCOUNT_BUTTON}</arg>
+<doc>Tap element identified by ``locator``. </doc>
+<status status="PASS" starttime="20220622 15:34:48.246" endtime="20220622 15:34:49.076"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220622 15:34:52.077" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220622 15:34:49.076" endtime="20220622 15:34:52.078"/>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220622 15:34:53.012" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-11.png"&gt;&lt;img src="appium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220622 15:34:52.078" endtime="20220622 15:34:53.012"/>
+</kw>
+<status status="PASS" starttime="20220622 15:34:41.514" endtime="20220622 15:34:53.013"/>
+</kw>
+<kw name="Close All Apps" library="config">
+<kw name="Close All Applications" library="AppiumLibrary">
+<doc>Closes all open applications.</doc>
+<status status="PASS" starttime="20220622 15:34:53.014" endtime="20220622 15:34:55.282"/>
+</kw>
+<status status="PASS" starttime="20220622 15:34:53.013" endtime="20220622 15:34:55.283"/>
+</kw>
+<status status="PASS" starttime="20220622 15:34:21.725" endtime="20220622 15:34:55.283"/>
+</test>
+<test id="s1-s3-t2" name="HT-004 : User enters invalid email." line="12">
+<kw name="Open App" library="config">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${BUNDLE_ID}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<arg>automationName=appium</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20220622 15:34:55.286" endtime="20220622 15:35:14.163"/>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220622 15:35:15.153" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-12.png"&gt;&lt;img src="appium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220622 15:35:14.163" endtime="20220622 15:35:15.153"/>
+</kw>
+<status status="PASS" starttime="20220622 15:34:55.286" endtime="20220622 15:35:15.154"/>
+</kw>
+<kw name="Create Account invalid email">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${HOMESCREEN_CREATE_ACCOUNT}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220622 15:35:15.155" endtime="20220622 15:35:17.324"/>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<arg>${HOMESCREEN_CREATE_ACCOUNT}</arg>
+<doc>Tap element identified by ``locator``. </doc>
+<status status="PASS" starttime="20220622 15:35:17.324" endtime="20220622 15:35:18.075"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${REGISTER_FIRST_NAME}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220622 15:35:18.075" endtime="20220622 15:35:20.788"/>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220622 15:35:21.823" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-13.png"&gt;&lt;img src="appium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220622 15:35:20.788" endtime="20220622 15:35:21.824"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${REGISTER_FIRST_NAME}</arg>
+<arg>${FIRST_NAME}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220622 15:35:21.829" level="INFO">Typing text 'Mohit' into text field 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.EditText[1]'</msg>
+<status status="PASS" starttime="20220622 15:35:21.824" endtime="20220622 15:35:22.345"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${REGISTER_LAST_NAME}</arg>
+<arg>${LAST_NAME}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220622 15:35:22.351" level="INFO">Typing text 'Rochwani' into text field 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.EditText[2]'</msg>
+<status status="PASS" starttime="20220622 15:35:22.346" endtime="20220622 15:35:23.735"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${REGISTER_EMAIL}</arg>
+<arg>mohit.r787</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220622 15:35:23.740" level="INFO">Typing text 'mohit.r787' into text field 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.EditText[3]'</msg>
+<status status="PASS" starttime="20220622 15:35:23.736" endtime="20220622 15:35:24.804"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${REGISTER_PASSWORD}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220622 15:35:24.810" level="INFO">Typing text 'mohit.r787' into text field 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.EditText[4]'</msg>
+<status status="PASS" starttime="20220622 15:35:24.804" endtime="20220622 15:35:25.513"/>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220622 15:35:26.518" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-14.png"&gt;&lt;img src="appium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220622 15:35:25.513" endtime="20220622 15:35:26.518"/>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<arg>${REGISTER_CREATE_ACCOUNT_BUTTON}</arg>
+<doc>Tap element identified by ``locator``. </doc>
+<status status="PASS" starttime="20220622 15:35:26.519" endtime="20220622 15:35:27.393"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220622 15:35:30.395" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220622 15:35:27.393" endtime="20220622 15:35:30.395"/>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220622 15:35:31.326" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-15.png"&gt;&lt;img src="appium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220622 15:35:30.395" endtime="20220622 15:35:31.326"/>
+</kw>
+<status status="PASS" starttime="20220622 15:35:15.154" endtime="20220622 15:35:31.327"/>
+</kw>
+<kw name="Close All Apps" library="config">
+<kw name="Close All Applications" library="AppiumLibrary">
+<doc>Closes all open applications.</doc>
+<status status="PASS" starttime="20220622 15:35:31.328" endtime="20220622 15:35:33.672"/>
+</kw>
+<status status="PASS" starttime="20220622 15:35:31.328" endtime="20220622 15:35:33.673"/>
+</kw>
+<status status="PASS" starttime="20220622 15:34:55.285" endtime="20220622 15:35:33.673"/>
+</test>
+<status status="PASS" starttime="20220622 15:34:21.717" endtime="20220622 15:35:33.675"/>
+</suite>
+<suite id="s1-s4" name="Test Scenario 4" source="/Users/anamkhan/Documents/Mohit/HostelWorld_TechChallenge/HostelWorld-TechChallenge/TestCases/test_scenario_4.robot">
+<test id="s1-s4-t1" name="HT-006 : User enters incorrect email id." line="7">
+<kw name="Open App" library="config">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${BUNDLE_ID}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<arg>automationName=appium</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20220622 15:35:33.686" endtime="20220622 15:35:51.805"/>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220622 15:35:53.160" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-16.png"&gt;&lt;img src="appium-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220622 15:35:51.805" endtime="20220622 15:35:53.160"/>
+</kw>
+<status status="PASS" starttime="20220622 15:35:33.685" endtime="20220622 15:35:53.160"/>
+</kw>
+<kw name="Login Failure Incorrect email">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${HOMESCREEN_LOGIN}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220622 15:35:53.161" endtime="20220622 15:35:55.285"/>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<arg>${HOMESCREEN_LOGIN}</arg>
+<doc>Tap element identified by ``locator``. </doc>
+<status status="PASS" starttime="20220622 15:35:55.285" endtime="20220622 15:35:55.897"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${LOGIN_EMAIL}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220622 15:35:55.897" endtime="20220622 15:35:58.422"/>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220622 15:35:59.416" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-17.png"&gt;&lt;img src="appium-screenshot-17.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220622 15:35:58.422" endtime="20220622 15:35:59.416"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${LOGIN_EMAIL}</arg>
+<arg>qwerty</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220622 15:35:59.422" level="INFO">Typing text 'qwerty' into text field 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.EditText[1]'</msg>
+<status status="PASS" starttime="20220622 15:35:59.417" endtime="20220622 15:36:00.288"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${LOGIN_PASSWORD}</arg>
+<arg>mohit.r787</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220622 15:36:00.294" level="INFO">Typing text 'mohit.r787' into text field 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.EditText[2]'</msg>
+<status status="PASS" starttime="20220622 15:36:00.288" endtime="20220622 15:36:02.006"/>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Tap element identified by ``locator``. </doc>
+<status status="PASS" starttime="20220622 15:36:02.007" endtime="20220622 15:36:03.557"/>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220622 15:36:04.598" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-18.png"&gt;&lt;img src="appium-screenshot-18.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220622 15:36:03.557" endtime="20220622 15:36:04.598"/>
+</kw>
+<status status="PASS" starttime="20220622 15:35:53.161" endtime="20220622 15:36:04.598"/>
+</kw>
+<kw name="Close All Apps" library="config">
+<kw name="Close All Applications" library="AppiumLibrary">
+<doc>Closes all open applications.</doc>
+<status status="PASS" starttime="20220622 15:36:04.599" endtime="20220622 15:36:07.118"/>
+</kw>
+<status status="PASS" starttime="20220622 15:36:04.599" endtime="20220622 15:36:07.118"/>
+</kw>
+<status status="PASS" starttime="20220622 15:35:33.684" endtime="20220622 15:36:07.119"/>
+</test>
+<test id="s1-s4-t2" name="HT-007 : User enters incorrect password." line="12">
+<kw name="Open App" library="config">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${BUNDLE_ID}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<arg>automationName=appium</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20220622 15:36:07.122" endtime="20220622 15:36:25.363"/>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220622 15:36:26.407" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-19.png"&gt;&lt;img src="appium-screenshot-19.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220622 15:36:25.363" endtime="20220622 15:36:26.408"/>
+</kw>
+<status status="PASS" starttime="20220622 15:36:07.121" endtime="20220622 15:36:26.408"/>
+</kw>
+<kw name="Login Failure Incorrect email">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${HOMESCREEN_LOGIN}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220622 15:36:26.409" endtime="20220622 15:36:28.649"/>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<arg>${HOMESCREEN_LOGIN}</arg>
+<doc>Tap element identified by ``locator``. </doc>
+<status status="PASS" starttime="20220622 15:36:28.649" endtime="20220622 15:36:29.347"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${LOGIN_EMAIL}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220622 15:36:29.347" endtime="20220622 15:36:32.303"/>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220622 15:36:33.376" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-20.png"&gt;&lt;img src="appium-screenshot-20.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220622 15:36:32.304" endtime="20220622 15:36:33.377"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${LOGIN_EMAIL}</arg>
+<arg>qwerty</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220622 15:36:33.379" level="INFO">Typing text 'qwerty' into text field 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.EditText[1]'</msg>
+<status status="PASS" starttime="20220622 15:36:33.377" endtime="20220622 15:36:33.686"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${LOGIN_PASSWORD}</arg>
+<arg>mohit.r787</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220622 15:36:33.692" level="INFO">Typing text 'mohit.r787' into text field 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.EditText[2]'</msg>
+<status status="PASS" starttime="20220622 15:36:33.686" endtime="20220622 15:36:35.067"/>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Tap element identified by ``locator``. </doc>
+<status status="PASS" starttime="20220622 15:36:35.067" endtime="20220622 15:36:36.374"/>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220622 15:36:37.503" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-21.png"&gt;&lt;img src="appium-screenshot-21.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220622 15:36:36.374" endtime="20220622 15:36:37.503"/>
+</kw>
+<status status="PASS" starttime="20220622 15:36:26.408" endtime="20220622 15:36:37.504"/>
+</kw>
+<kw name="Close All Apps" library="config">
+<kw name="Close All Applications" library="AppiumLibrary">
+<doc>Closes all open applications.</doc>
+<status status="PASS" starttime="20220622 15:36:37.505" endtime="20220622 15:36:40.185"/>
+</kw>
+<status status="PASS" starttime="20220622 15:36:37.504" endtime="20220622 15:36:40.186"/>
+</kw>
+<status status="PASS" starttime="20220622 15:36:07.120" endtime="20220622 15:36:40.187"/>
+</test>
+<status status="PASS" starttime="20220622 15:35:33.677" endtime="20220622 15:36:40.188"/>
+</suite>
+<suite id="s1-s5" name="Test Scenario 5" source="/Users/anamkhan/Documents/Mohit/HostelWorld_TechChallenge/HostelWorld-TechChallenge/TestCases/test_scenario_5.robot">
+<test id="s1-s5-t1" name="HT-008 : User is able to navigate to the Account details screen with correct email and password." line="7">
+<kw name="Open App" library="config">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${BUNDLE_ID}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<arg>automationName=appium</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20220622 15:36:40.209" endtime="20220622 15:36:58.996"/>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220622 15:36:59.934" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-22.png"&gt;&lt;img src="appium-screenshot-22.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220622 15:36:58.996" endtime="20220622 15:36:59.934"/>
+</kw>
+<status status="PASS" starttime="20220622 15:36:40.209" endtime="20220622 15:36:59.934"/>
+</kw>
+<kw name="Login Successful">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${HOMESCREEN_LOGIN}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220622 15:36:59.935" endtime="20220622 15:37:02.440"/>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<arg>${HOMESCREEN_LOGIN}</arg>
+<doc>Tap element identified by ``locator``. </doc>
+<status status="PASS" starttime="20220622 15:37:02.441" endtime="20220622 15:37:03.106"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${LOGIN_EMAIL}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220622 15:37:03.107" endtime="20220622 15:37:05.859"/>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220622 15:37:07.083" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-23.png"&gt;&lt;img src="appium-screenshot-23.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220622 15:37:05.859" endtime="20220622 15:37:07.083"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${LOGIN_EMAIL}</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220622 15:37:07.087" level="INFO">Typing text 'mohit.r787@gmail.com' into text field 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.EditText[1]'</msg>
+<status status="PASS" starttime="20220622 15:37:07.084" endtime="20220622 15:37:07.457"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${LOGIN_PASSWORD}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20220622 15:37:07.463" level="INFO">Typing text 'mohit.r787' into text field 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.EditText[2]'</msg>
+<status status="PASS" starttime="20220622 15:37:07.458" endtime="20220622 15:37:08.584"/>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Tap element identified by ``locator``. </doc>
+<status status="PASS" starttime="20220622 15:37:08.584" endtime="20220622 15:37:09.638"/>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220622 15:37:11.048" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-24.png"&gt;&lt;img src="appium-screenshot-24.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220622 15:37:09.638" endtime="20220622 15:37:11.048"/>
+</kw>
+<status status="PASS" starttime="20220622 15:36:59.935" endtime="20220622 15:37:11.048"/>
+</kw>
+<kw name="Close All Apps" library="config">
+<kw name="Close All Applications" library="AppiumLibrary">
+<doc>Closes all open applications.</doc>
+<status status="PASS" starttime="20220622 15:37:11.050" endtime="20220622 15:37:13.658"/>
+</kw>
+<status status="PASS" starttime="20220622 15:37:11.049" endtime="20220622 15:37:13.658"/>
+</kw>
+<status status="PASS" starttime="20220622 15:36:40.207" endtime="20220622 15:37:13.659"/>
+</test>
+<status status="PASS" starttime="20220622 15:36:40.190" endtime="20220622 15:37:13.660"/>
+</suite>
+<status status="PASS" starttime="20220622 15:32:53.423" endtime="20220622 15:37:13.663"/>
+</suite>
+<statistics>
+<total>
+<stat pass="8" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="8" fail="0" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="Test Scenario 1">TestCases.Test Scenario 1</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="Test Scenario 2">TestCases.Test Scenario 2</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s3" name="Test Scenario 3">TestCases.Test Scenario 3</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s4" name="Test Scenario 4">TestCases.Test Scenario 4</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s5" name="Test Scenario 5">TestCases.Test Scenario 5</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

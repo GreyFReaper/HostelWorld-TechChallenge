@@ -4,18 +4,17 @@ Library           AppiumLibrary
 Resource          config.robot
 
 *** Test Cases ***
-test_home_screen
+HT-005 : User enters the details correctly and is able to create account.
      Open App
-     Create Account
+     Create Account Successfully
      Close All Apps
 
 *** Keywords ***
-Create Account
-     Sleep          5 seconds
+Create Account Successfully
+     Wait Until Page Contains Element        ${HOMESCREEN_CREATE_ACCOUNT}
      Tap        ${HOMESCREEN_CREATE_ACCOUNT}
-     Sleep          5 seconds
+     Wait Until Page Contains Element        ${REGISTER_FIRST_NAME}
      Capture Page Screenshot
-     Sleep          5 seconds
      Input Text         ${REGISTER_FIRST_NAME}           ${FIRST_NAME}
      Input Text         ${REGISTER_LAST_NAME}            ${LAST_NAME}
      Input Text         ${REGISTER_EMAIL}                ${EMAIL}
